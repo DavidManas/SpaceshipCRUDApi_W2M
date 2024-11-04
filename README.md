@@ -1,1 +1,1 @@
-"# SpaceshipCRUDApi_W2M" 
+A Spring Boot API for managing spacecraft from series and movies. Features include CRUD operations, pagination, name search, unit and integration tests (JUnit, Mockito), API documentation (JavaDoc, Swagger), in-memory caching, Dockerization, and centralized exception handling. Uses H2 in-memory database.
