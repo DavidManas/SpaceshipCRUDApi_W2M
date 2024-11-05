@@ -23,6 +23,13 @@ public class SpaceshipService {
         this.repository = repository;
     }
 
+	/**
+	* Initializes the spaceship data in the repository after the bean creation.
+	*
+	* This method is annotated with {@code @PostConstruct} to populate the repository
+	* with a predefined list of spaceships from the "Star Wars" series when the application
+	* context is loaded.
+	*/
     @PostConstruct
     public void initData() {
         repository.save(new Spaceship("X-Wing", "Star Wars"));
