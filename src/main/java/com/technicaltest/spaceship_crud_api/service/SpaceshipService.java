@@ -25,7 +25,6 @@ public class SpaceshipService {
 
     @PostConstruct
     public void initData() {
-    	System.out.println("Iniciando la inserción de datos...");
         repository.save(new Spaceship("X-Wing", "Star Wars"));
         repository.save(new Spaceship("TIE Fighter", "Star Wars"));
         repository.save(new Spaceship("Millennium Falcon", "Star Wars"));
@@ -34,7 +33,6 @@ public class SpaceshipService {
         repository.save(new Spaceship("Executor", "Star Wars"));
         repository.save(new Spaceship("Nebulon-B Frigate", "Star Wars"));
         repository.save(new Spaceship("Jedi Starfighter", "Star Wars"));
-        System.out.println("Datos insertados correctamente.");
     }
 
     public List<Spaceship> getAllSpaceships(int page, int size) {
